@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SolanaMAUI_sample.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Home">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+
+            <Entry x:Name="TokenAddressEntry" Placeholder="Enter token address" />
+            <Button
+                Margin="0,20,0,0"
+                Clicked="OnSubmitClicked"
+                Text="Search" />
+            <WebView
+                x:Name="dex"
+                HeightRequest="550"
+                WidthRequest="400" />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+
+

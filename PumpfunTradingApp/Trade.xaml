@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SolanaMAUI_sample.Trade"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <VerticalStackLayout Padding="30,0" Spacing="25">
+        <Label FontSize="Medium" Text="Token Address" />
+        <Entry
+            x:Name="TokenAddressEntry"
+            Placeholder="{Binding CurrentTokenAddress}"
+            Text="{Binding CurrentTokenAddress}" />
+        <Label
+            Margin="0,10,0,0"
+            FontSize="Medium"
+            Text="Amount" />
+        <Entry
+            x:Name="AmountEntry"
+            Keyboard="Numeric"
+            Placeholder="Enter amount" />
+        <Label
+            Margin="0,10,0,0"
+            FontSize="Medium"
+            Text="Transaction Type" />
+        <Picker x:Name="TransactionTypePicker">
+            <Picker.Items>
+                <x:String>Buy</x:String>
+                <x:String>Sell</x:String>
+            </Picker.Items>
+        </Picker>
+        <Button
+            Margin="0,20,0,0"
+            Clicked="OnSubmitClicked"
+            Text="Submit" />
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

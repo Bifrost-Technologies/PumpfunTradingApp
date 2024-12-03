@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="SolanaMAUI_sample.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:SolanaMAUI_sample"
+    Title="SolanaMAUI_sample"
+    Shell.FlyoutBehavior="Disabled">
+
+
+    <TabBar>
+        <!--  First Tab  -->
+        <ShellContent Title="Home" ContentTemplate="{DataTemplate local:MainPage}" />
+        <!--  Second Tab  -->
+        <ShellContent Title="Trade" ContentTemplate="{DataTemplate local:Trade}" />
+
+    </TabBar>
+</Shell>
